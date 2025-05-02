@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #e6fff1, #d4fce5);
+}
+
+#game-container {
+  margin: 20px;
+  cursor: url('slips_cursor.png'), auto;
+  position: relative;
+  color: #fff; /* 🌟 added default white text for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 🌟 add shadow for readability */
+}
+
+#cockroach-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('bgwood.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: url('slips_cursor.png'), auto;
+  z-index: -1;
+}
+
+.cockroach {
+  width: 80px;
+  height: 130px;
+  position: absolute;
+  background: url('rogerroach.png') no-repeat center center;
+  background-size: cover;
+  cursor: url('slips_cursor.png'), auto;
+}
+
+.dead {
+  background: url('dead-cockroach.png') no-repeat center center;
+  background-size: cover;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: transparent;
+  color: #fff; /* 🌟 changed to white for contrast */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* 🌟 shadow for visibility */
+  text-align: center;
+  padding: 20px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  font-size: 1.4em; /* 🌟 slightly bigger */
+  cursor: pointer;
+}
+
+.popup button {
+  margin-top: 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 14px 24px; /* 🌟 increased padding */
+  font-size: 18px; /* 🌟 bigger font */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.score-panel {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-align: right;
+  z-index: 1000;
+  font-size: 20px; /* 🌟 bigger text */
+  color: #fff; /* 🌟 white text */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  font-weight: bold;
+}
+
+#mute-btn {
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 20px; /* 🌟 bigger */
+  color: #fff;
+}
+
+#game-instructions {
+  font-size: 20px; /* 🌟 bigger */
+  color: #fff; /* 🌟 white for visibility */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* 🌟 shadow */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#game-container h1 {
+  font-size: 2.4em; /* 🌟 bigger */
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+}
+
+.popup-content h2 {
+  font-size: 2.4em; /* 🌟 bigger */
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+}
